@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSB eKYC - Digital Account Opening</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background graphical element -->
+    <div class="bg-waves"></div>
+
+    <header>
+        <div class="logo">
+            <span class="nsb">NSB</span><br>
+            <span class="e">e</span><span class="kyc">KYC</span>
+        </div>
+        <div class="header-line"></div>
+    </header>
+
+    <main class="container">
+        <div class="titles">
+            <h1>Welcome</h1>
+            <h2>Digital Account Opening</h2>
+        </div>
+
+        <div class="descriptions">
+            <p>Experience the Efficiency of Self-Banking with NSB.<br>Please select the language to get started.</p>
+            <p class="lang-text-alt">ආයුබෝවන්, NSB වෙත සාදරයෙන් පිළිගනිමු. ඔබේ ප්‍රශ්නවලට පිළිතුරු සැපයීම<br>සඳහා කරුණාකර භාෂාව තෝරන්න.</p>
+            <p class="lang-text-alt">வணக்கம், NSBக்கு உங்களை வரவேற்கிறோம். தொடர்வதற்கு, விருப்பமான<br>மொழியைத் தேர்ந்தெடுக்கவும்.</p>
+        </div>
+
+        <form class="language-form">
+            <div class="language-cards">
+                <!-- English -->
+                <label class="lang-card-wrapper">
+                    <input type="radio" name="language" value="english" checked>
+                    <div class="lang-card">
+                        <div class="lang-icon english-icon">En</div>
+                        <div class="radio-label">
+                            <span class="radio-custom"></span>
+                            English
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Sinhala -->
+                <label class="lang-card-wrapper">
+                    <input type="radio" name="language" value="sinhala">
+                    <div class="lang-card">
+                        <div class="lang-icon sinhala-icon">සිං</div>
+                        <div class="radio-label">
+                            <span class="radio-custom"></span>
+                            Sinhala
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Tamil -->
+                <label class="lang-card-wrapper">
+                    <input type="radio" name="language" value="tamil">
+                    <div class="lang-card">
+                        <div class="lang-icon tamil-icon">த</div>
+                        <div class="radio-label">
+                            <span class="radio-custom"></span>
+                            Tamil
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- reCAPTCHA Box -->
+            <div class="recaptcha-box">
+                <div class="recaptcha-inner">
+                    <div class="recaptcha-left">
+                        <input type="checkbox" id="robot-check">
+                        <label for="robot-check">I'm not a robot</label>
+                    </div>
+                    <div class="recaptcha-right">
+                        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA">
+                        <span>reCAPTCHA</span>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn-get-started">Get Started</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

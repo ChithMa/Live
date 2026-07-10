@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSB eKYC - Personal Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-waves"></div>
+
+    <header class="header-with-lang">
+        <div class="logo">
+            <span class="nsb">NSB</span><br>
+            <span class="e">e</span><span class="kyc">KYC</span>
+        </div>
+        <div class="header-line"></div>
+        <div class="lang-dropdown">
+            <svg class="globe-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+            </svg>
+            <span class="lang-text">En</span>
+            <span class="dropdown-arrow">▼</span>
+        </div>
+    </header>
+
+    <div class="stepper-container">
+        <div class="step completed">
+            <span class="step-label">Contact<br>Information</span>
+            <div class="step-icon">C</div>
+        </div>
+        <div class="step-line active-line"></div>
+        <div class="step active">
+            <span class="step-label active-label">Personal<br>Information</span>
+            <div class="step-icon active-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                    <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg></div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <span class="step-label">Purpose</span>
+            <div class="step-icon">P</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <span class="step-label">Employment<br>Information</span>
+            <div class="step-icon">E</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <span class="step-label">Documents</span>
+            <div class="step-icon">D</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <span class="step-label">Preview</span>
+            <div class="step-icon">V</div>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <span class="step-label">Verification</span>
+            <div class="step-icon">✔</div>
+        </div>
+    </div>
+
+    <main class="container form-container">
+        <div class="form-title-group">
+            <div class="title-icon">
+                <svg viewBox="0 0 24 24" fill="var(--primary-yellow)" width="40" height="40">
+                    <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+            </div>
+            <h2>Personal Information</h2>
+        </div>
+
+        <form class="long-form">
+            <!-- Form fields based on the image -->
+            <div class="form-group half">
+                <label>Civil Status</label>
+                <select class="form-control">
+                    <option></option>
+                </select>
+            </div>
+
+            <div class="form-group half">
+                <label>Spouse Full Name</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group full">
+                <label>Nationality & Citizenship<span class="asterisk">*</span></label>
+                <select class="form-control">
+                    <option>Sri Lankan</option>
+                </select>
+            </div>
+
+            <div class="form-group full">
+                <label>Residency<span class="asterisk">*</span></label>
+                <div class="radio-group-inline">
+                    <label class="doc-radio-label">
+                        <input type="radio" name="residency" value="resident" checked class="custom-radio">
+                        <span class="radio-text">Resident in Sri Lanka</span>
+                    </label>
+                    <label class="doc-radio-label">
+                        <input type="radio" name="residency" value="non-resident" class="custom-radio">
+                        <span class="radio-text">Non Resident</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="section-title">Permanent Address in Sri Lanka as per the Address proof</div>
+            <div class="form-group full">
+                <label>House Name / Building No / Apartment No<span class="asterisk">*</span></label>
+                <input type="text" class="form-control" value="NO -170/1">
+            </div>
+            <div class="form-row">
+                <div class="form-group half">
+                    <label>Street Name<span class="asterisk">*</span></label>
+                    <input type="text" class="form-control" value="ALOTUWA WATTA JANAPA...">
+                </div>
+                <div class="form-group half">
+                    <label>City<span class="asterisk">*</span></label>
+                    <input type="text" class="form-control" value="KANDY">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group half">
+                    <label>ZIP / Postal Code</label>
+                    <input type="text" class="form-control bg-grey" value="20052">
+                </div>
+                <div class="form-group half">
+                    <label>Country<span class="asterisk">*</span></label>
+                    <select class="form-control bg-grey">
+                        <option>Sri Lanka</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section-title">Mailing Address</div>
+            <div class="location-group">
+                <input type="checkbox" id="same-address" class="custom-checkbox" checked>
+                <label for="same-address" class="location-label font-bold">Same as Above Address</label>
+            </div>
+
+            <!-- Disabled-looking fields -->
+            <div class="form-group full">
+                <label>House Name / Building No / Apartment No<span class="asterisk">*</span></label>
+                <input type="text" class="form-control bg-grey" value="NO -170/1" disabled>
+            </div>
+            <div class="form-row">
+                <div class="form-group half">
+                    <label>Street Name<span class="asterisk">*</span></label>
+                    <input type="text" class="form-control bg-grey" value="ALOTUWA WATTA JANAPA..." disabled>
+                </div>
+                <div class="form-group half">
+                    <label>City<span class="asterisk">*</span></label>
+                    <input type="text" class="form-control bg-grey" value="KANDY" disabled>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group half">
+                    <label>ZIP / Postal Code</label>
+                    <input type="text" class="form-control bg-grey" value="20052" disabled>
+                </div>
+                <div class="form-group half">
+                    <label>Country<span class="asterisk">*</span></label>
+                    <select class="form-control bg-grey" disabled>
+                        <option>Sri Lanka</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Additional Contacts -->
+            <div class="add-link">
+                <div class="add-icon">+</div> <a href="#" class="read-more">Contact Number - Residence</a>
+            </div>
+            <div class="add-link" style="margin-bottom: 25px;">
+                <div class="add-icon">+</div> <a href="#" class="read-more">Contact Number - Office</a>
+            </div>
+
+            <div class="form-group full">
+                <label>Are You a US Person<span class="asterisk">*</span></label>
+                <div class="radio-group-inline">
+                    <label class="doc-radio-label">
+                        <input type="radio" name="us_person" value="yes" class="custom-radio">
+                        <span class="radio-text">Yes</span>
+                    </label>
+                    <label class="doc-radio-label">
+                        <input type="radio" name="us_person" value="no" checked class="custom-radio">
+                        <span class="radio-text">No</span>
+                    </label>
+                </div>
+                <p class="helper-text">* A citizen of USA (including an individual born in the US but resident in
+                    another country, who has not renounced US citizenship)/ A lawful resident of the US (including a US
+                    Green Card Holder)/ A person who spends a certain number of days in the US or US territories/ Non-US
+                    entities that have at least one US Person as a "substantial beneficial owner".</p>
+            </div>
+
+            <div class="form-group full">
+                <label>Account Number/s in National Savings Bank</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group full">
+                <label>Place of Birth<span class="asterisk">*</span></label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="location-group">
+                <input type="checkbox" id="same-us-address" class="custom-checkbox">
+                <label for="same-us-address" class="location-label">Same as Above Address</label>
+            </div>
+
+            <div class="form-group full">
+                <label>Permanent Address in US<span class="asterisk">*</span></label>
+                <!-- Usually inputs would be here but spacing suggests logic hides/shows -->
+            </div>
+
+            <div class="form-group half">
+                <label>Passport No<span class="asterisk">*</span></label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group full">
+                <label>US Telephone Number<span class="asterisk">*</span></label>
+                <div class="phone-input-row">
+                    <select class="form-control phone-code">
+                        <option>🇺🇸 +1</option>
+                    </select>
+                    <input type="text" class="form-control phone-number">
+                </div>
+            </div>
+
+            <div class="form-group full">
+                <label>Tax Identification Number in US / Social Security Number<span class="asterisk">*</span></label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group full">
+                <label>Are you a "Politically Exposed Person"(PEP)?<span class="asterisk">*</span></label>
+                <div class="radio-group-inline">
+                    <label class="doc-radio-label">
+                        <input type="radio" name="pep" value="yes" class="custom-radio">
+                        <span class="radio-text">Yes</span>
+                    </label>
+                    <label class="doc-radio-label">
+                        <input type="radio" name="pep" value="no" checked class="custom-radio">
+                        <span class="radio-text">No</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group full">
+                <label>Any member of your family a PEP?<span class="asterisk">*</span></label>
+                <div class="radio-group-inline">
+                    <label class="doc-radio-label">
+                        <input type="radio" name="family_pep" value="yes" class="custom-radio">
+                        <span class="radio-text">Yes</span>
+                    </label>
+                    <label class="doc-radio-label">
+                        <input type="radio" name="family_pep" value="no" checked class="custom-radio">
+                        <span class="radio-text">No</span>
+                    </label>
+                </div>
+                <p class="helper-text text-red">* Politically Exposed Person (PEP) include individuals in Sri Lanka or
+                    abroad who are or have been entrusted with prominent public functions. E.g. Head of State or of
+                    Government, Senior Politicians, Senior Government, Judicial or Military Official, Senior Executives
+                    of state owned corporations, important political party officials etc. This further applicable to
+                    family.</p>
+            </div>
+
+
+            <div class="button-group form-buttons">
+                <button type="button" class="btn-secondary"
+                    onclick="window.location.href='application.html'">Back</button>
+                <button type="button" class="btn-primary" id="btn-submit-form">Continue</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

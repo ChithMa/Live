@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSB eKYC - Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background stylistic lines -->
+    <div class="bg-waves"></div>
+
+    <header class="header-with-lang">
+        <div class="logo">
+            <span class="nsb">NSB</span><br>
+            <span class="e">e</span><span class="kyc">KYC</span>
+        </div>
+        <div class="header-line"></div>
+        <div class="lang-dropdown">
+            <svg class="globe-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+            </svg>
+            <span class="lang-text">En</span>
+            <span class="dropdown-arrow">▼</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="app-titles">
+            <h2>Online Account Opening Application</h2>
+        </div>
+
+        <form class="doc-selection-form" id="doc-selection-form">
+            <div class="doc-cards">
+                <!-- NIC Element -->
+                <label class="doc-card-wrapper" id="nic-wrapper">
+                    <div class="doc-card" id="nic-card">
+                        <div class="doc-image-container">
+                            <!-- CSS representation of NICs -->
+                            <div class="nic-old"></div>
+                            <div class="nic-new"></div>
+                        </div>
+                    </div>
+                    <div class="doc-radio-label">
+                        <input type="radio" name="document_type" value="nic" id="nic-radio" checked
+                            class="custom-radio">
+                        <span class="radio-text">NIC</span>
+                    </div>
+                </label>
+
+                <!-- Passport Element -->
+                <label class="doc-card-wrapper" id="passport-wrapper">
+                    <div class="doc-card" id="passport-card">
+                        <div class="doc-image-container">
+                            <!-- CSS representation of Passport -->
+                            <div class="passport">
+                                <div class="passport-text">PASSPORT</div>
+                                <div class="passport-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-radio-label">
+                        <input type="radio" name="document_type" value="passport" id="passport-radio"
+                            class="custom-radio">
+                        <span class="radio-text">Passport</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Dynamic Input Section -->
+            <div class="input-section" id="doc-input-section">
+                <label class="input-label" id="doc-input-label">Please Enter Your National Identity Card Number<span
+                        class="asterisk">*</span></label>
+                <input type="text" id="doc-number-input" class="doc-input">
+
+                <div class="location-group">
+                    <input type="checkbox" id="location-check" class="custom-checkbox" checked>
+                    <label for="location-check" class="location-label">
+                        Allow location services in your browser. <a href="#" class="read-more">Read More</a>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">Back</button>
+                <button type="button" class="btn-primary" id="btn-continue">Continue</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
