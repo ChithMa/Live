@@ -1,0 +1,465 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>
+	<title>Nawaloka Hospital Medical Checkup Registration</title>
+	<style type="text/css">*{
+box-sizing:border-box;
+}
+
+
+body{
+
+margin:0;
+background:#f4f7f6;
+font-family:"Helvetica Neue",Arial,sans-serif;
+color:#243b35;
+
+}
+
+
+.page{
+
+padding:30px;
+
+}
+
+
+
+.header{
+
+max-width:900px;
+margin:auto;
+
+background:linear-gradient(135deg,#075b35,#198754);
+
+color:white;
+text-align:center;
+
+padding:35px;
+
+border-bottom:5px solid #ffc107;
+
+border-radius:10px 10px 0 0;
+
+}
+
+
+
+.hospital{
+
+font-size:14px;
+font-weight:bold;
+letter-spacing:3px;
+color:#ffc107;
+
+}
+
+
+
+h1{
+
+font-size:28px;
+line-height:1.2;
+font-weight:900;
+
+margin:15px 0;
+
+}
+
+
+.subtitle{
+
+font-size:14px;
+
+}
+
+
+
+
+
+.container{
+
+max-width:900px;
+
+margin:auto;
+
+background:white;
+
+padding:35px;
+
+border-radius:0 0 10px 10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+
+.offer{
+
+background:#f1f8f5;
+
+border:2px dashed #198754;
+
+padding:18px;
+
+border-radius:8px;
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+
+.offer h3{
+
+margin:0 0 10px;
+
+color:#075b35;
+
+}
+
+
+.offer p{
+
+font-size:13px;
+
+line-height:1.5;
+
+}
+
+
+
+
+
+.section-title{
+
+font-size:15px;
+
+font-weight:bold;
+
+color:#075b35;
+
+text-transform:uppercase;
+
+border-left:5px solid #ffc107;
+
+padding-left:12px;
+
+margin:25px 0 15px;
+
+}
+
+
+
+
+
+.row{
+
+display:flex;
+
+gap:20px;
+
+}
+
+
+
+.field{
+
+flex:1;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+label{
+
+display:block;
+
+font-size:12px;
+
+font-weight:bold;
+
+color:#52635d;
+
+margin-bottom:6px;
+
+}
+
+
+
+
+
+input,
+select,
+textarea{
+
+width:100%;
+
+padding:12px;
+
+border:1px solid #ccd8d3;
+
+border-radius:6px;
+
+font-size:13px;
+
+}
+
+
+
+textarea{
+
+resize:none;
+
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+outline:none;
+
+border-color:#198754;
+
+}
+
+
+
+
+
+.checkbox{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-size:13px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.checkbox input{
+
+width:auto;
+
+}
+
+
+
+
+.hidden{
+
+display:none;
+
+}
+
+
+
+
+.note{
+
+background:#f8f9fa;
+
+border-left:4px solid #198754;
+
+padding:15px;
+
+font-size:12px;
+
+line-height:1.6;
+
+margin:15px 0;
+
+}
+
+
+
+
+button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ffc107;
+
+font-weight:bold;
+
+font-size:14px;
+
+cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+background:#e0ad00;
+
+}
+
+
+
+
+.footer{
+
+max-width:900px;
+
+margin:auto;
+
+background:#075b35;
+
+color:white;
+
+text-align:center;
+
+font-size:12px;
+
+padding:15px;
+
+border-top:3px solid #ffc107;
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+.row{
+
+display:block;
+
+}
+
+
+.page{
+
+padding:10px;
+
+}
+
+}
+	</style>
+</head>
+<body>
+<div class="page">
+<div class="header">
+<div class="hospital">NAWALOKA HOSPITAL</div>
+
+<h1>FREE ANNUAL FULL BODY<br/>
+MEDICAL CHECKUP PROGRAM 2026</h1>
+
+<div class="subtitle">Employee Registration Portal</div>
+</div>
+
+<div class="container">
+<div class="offer">
+<h3>🎁 Exclusive Family Member Offer</h3>
+
+<p>The first <b>50 registered employees</b> will receive the opportunity to bring <b>one family member</b> for the same comprehensive medical checkup completely free of charge.</p>
+</div>
+
+<form action="">
+<div class="section-title">Employee Information</div>
+
+<div class="row">
+<div class="field"><label>Employee Full Name * </label> <input required="" type="text"/></div>
+
+<div class="field"><label>Employee ID * </label> <input required="" type="text"/></div>
+</div>
+
+<div class="row">
+<div class="field"><label>NIC / Passport Number * </label> <input required="" type="text"/></div>
+
+<div class="field"><label>Mobile Number * </label> <input required="" type="tel"/></div>
+</div>
+
+<div class="field"><label>Email Address </label> <input type="email"/></div>
+
+<div class="section-title">Department Information</div>
+
+<div class="field"><label>Department * </label> <select required=""><option>Select Department</option><option>Administration</option><option>Finance</option><option>Human Resources</option><option>IT</option><option>Operations</option><option>Sales &amp; Marketing</option><option>Other</option> </select></div>
+
+<div class="section-title">Family Member Registration</div>
+
+<div class="checkbox"><input id="familyCheck" onclick="showFamily()" type="checkbox"/> <label> I would like to register one family member under the special offer </label></div>
+
+<div class="hidden" id="familyDetails">
+<div class="row">
+<div class="field"><label>Family Member Full Name * </label> <input type="text"/></div>
+
+<div class="field"><label>Relationship * </label> <select><option>Select Relationship</option><option>Spouse</option><option>Parent</option><option>Child</option><option>Sibling</option><option>Other</option> </select></div>
+</div>
+
+<div class="row">
+<div class="field"><label>Family Member Age </label> <input type="number"/></div>
+
+<div class="field"><label>Family Member Contact Number </label> <input type="tel"/></div>
+</div>
+
+<div class="field"><label>Existing Illnesses / Medical Conditions </label><textarea placeholder="Please mention any illnesses, allergies, medications, surgeries, or existing medical conditions" rows="4"></textarea></div>
+</div>
+
+<div class="section-title">Medical Camp Appointment Selection</div>
+
+<div class="field"><label>Select Preferred Medical Checkup Day * </label> <select required=""><option>Select Day</option><option>Day 1 - 15 August 2026</option><option>Day 2 - 16 August 2026</option> </select></div>
+
+<div class="note">✔ Medical Camp Duration: 2 Days<br/>
+✔ Venue: Nawaloka Hospital Medical Centre, Colombo<br/>
+✔ Fasting and preparation instructions will be provided after confirmation.<br/>
+✔ Family member free checkup benefit is limited to the first 50 registered employees.</div>
+<button type="submit">CONFIRM REGISTRATION</button></form>
+</div>
+
+<div class="footer">Nawaloka Hospital Healthcare Services Team<br/>
+Please Contact Your Designated Corporate Coordinator for Assistance</div>
+</div>
+<script>
+
+
+function showFamily(){
+
+
+let check=document.getElementById("familyCheck");
+
+let details=document.getElementById("familyDetails");
+
+
+
+if(check.checked){
+
+details.style.display="block";
+
+}
+
+else{
+
+details.style.display="none";
+
+}
+
+
+}
+
+
+</script>
+
+</body></html>
