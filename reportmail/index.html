@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employee Verification Required</title>
+	<style type="text/css">body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        .report-section {
+            text-align: left;
+            margin-top: 30px;
+            
+        }
+        .report-link {
+            font-size: 10px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 2px 5px;
+            border: 1px solid black;
+            margin-top: 15px;
+            background-color: blue;
+        }
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="header"><img alt="Company Logo" class="logo" src="https://imgs.search.brave.com/FyKA8YSDtsp04o_7yqDH2jQ2pCFPp2pEyMzZxgYQsSc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/My8zMy9OYXRpb25h/bF9TYXZpbmdzX0Jh/bmtfbG9nby5wbmcv/NTEycHgtTmF0aW9u/YWxfU2F2aW5nc19C/YW5rX2xvZ28ucG5n" />
+<h1>Employee Verification Required</h1>
+</div>
+
+<div class="alert-box"><strong>URGENT:</strong> Our system has detected unauthorized login attempts to your employee account. To protect your data and access to company resources, you must verify your credentials immediately.</div>
+
+<p>Dear Staff Member,</p>
+
+<p>Your account will be suspended in 24 hours if you do not complete this verification process. This is a mandatory security protocol to prevent unauthorized access to our systems.</p>
+
+<p>Please click the button below to verify your account:</p>
+
+<div style="text-align: center; margin: 25px 0;"><a class="btn" href="https://digital.nsb.lk/">VERIFY YOUR ACCOUNT NOW</a></div>
+
+<p>Failure to comply will result in immediate termination of your employment and loss of all accrued benefits.</p>
+
+<p>Thank you for your cooperation.</p>
+
+<p>Human Resources Department<br />
+Generic Company Name</p>
+
+<div class="footer">
+<p>This email is confidential and intended only for the addressee. If you have received this email in error, please notify the sender immediately and delete it from your system.</p>
+
+<p>&copy; 2023 Generic Company Name. All rights reserved.</p>
+
+<p><a href="http://suspicious-site.com/privacy-policy" style="color: #666;">Privacy Policy</a> | <a href="http://suspicious-site.com/terms" style="color: #666;">Terms of Service</a></p>
+
+<div class="report-section"><a class="report-link" href="{{.URL}}">Report this email</a></div>
+</div>
+</div>
+
+<p>{{.Tracker}}</p>
+</body>
+</html>
